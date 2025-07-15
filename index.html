@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <title>NokiPets - Adopt a Pet</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="pet-card">
     <img src="orange-cat.png" alt="Orange Cat" class="pet-image">
     <h1 class="pet-name">Orange Cat</h1>
-    <p class="pet-breed">Orange Cat Cat</p>
+    <p class="pet-breed">Breed: Orange Tabby</p>
 
     <!-- Gender Selection -->
     <div class="gender-select">
-      <label>Select Gender:</label>
+      <label>Select Gender:</label><br>
       <input type="radio" id="male" name="gender" value="Male">
       <label for="male">♂ Male</label>
       <input type="radio" id="female" name="gender" value="Female" checked>
@@ -30,7 +31,9 @@
       <p>Curiosity: <span id="curiosity"></span></p>
     </div>
 
-    <!-- Adopt Button -->
+    <!-- Buttons -->
+    <button onclick="generateTraits()">🎲 Reroll Traits</button>
+
     <div class="adopt-section">
       <p>Adopt for 150 PD</p>
       <button onclick="adoptPet()">💖 Adopt Me!</button>
